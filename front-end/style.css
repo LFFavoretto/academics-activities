@@ -1,0 +1,221 @@
+:root{
+    --cor-fundo-primaria: #fff;
+    --cor-fundo-secundaria: #020426;    
+    --cor-fundo-terciaria: #05F2DB;
+    --cor-fonte-principal:#040959;
+    --cor-fonte-secundaria: black;
+    --cor-fonte-terciaria:#05F2DB;
+    --cor-border: black;
+    --cor-menu-lateral:#035AA6;
+    --cor-de-fundo-hover:#0C59F2 ;
+    --fonte-principal: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: var(--cor-fundo-primaria);
+}
+.cabecalho {
+    display: flex;
+    align-items: center;    
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--cor-fundo-secundaria);
+}
+
+.cabecalho_texto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cabecalho_logo{
+    height: 120px;
+    width: 120px;
+}
+
+.subtitulo {
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--cor-fundo-terciaria);
+}
+
+.navegacao {
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    display: flex;
+    gap: 12px;           
+}
+
+.botao {
+    border: 2px solid var(--cor-border);
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: var(--cor-fundo-terciaria);
+    color: var(--cor-fonte-principal);
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.conteudo { 
+    display: flex;
+    flex-direction: row;
+}
+
+.menu_lateral{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    flex: 0 0 300px;
+}
+
+.mais_lidos{    
+    margin: 5px;         
+    border: 3px solid;
+    background-color: var(--cor-fundo-terciaria);    
+}
+.mais_lidos_subtitulo {
+    font-family: var(--fonte-principal);
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;    
+    color: var(--cor-fonte-principal);
+}
+.mais_lidos_lista{
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: var(--cor-fonte-principal);
+    
+}
+
+.mais_lidos_lista_item{
+    font-family: var(--fonte-principal);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.sobre_aluno{   
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--cor-border);
+    margin: 5px;   
+    background-color: var(--cor-fonte-terciaria); 
+}
+
+.sobre_aluno_subtitulo{
+    text-align: center;
+    color: var(--cor-fonte-principal);
+    font-family: var(--fonte-principal);
+}
+
+.sobre_aluno_lista{     
+    list-style: none;
+    padding: 0;
+}
+
+.sobre_aluno_lista_item{
+    padding-left: 25px;
+    font-family: var(--fonte-principal);
+    color: var(--cor-fonte-principal);
+}
+
+.noticias{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+    
+}
+
+.artigo{
+    display: flex;
+    border: 2px solid var(--cor-border);
+    border-radius: 5px;
+    max-width: 1000px;       
+}
+.artigo_imagem {
+    height: 340px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.artigo_texto{
+    display: flex;
+    flex-direction: column;
+}
+
+.artigo_titulo{
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    color:var(--cor-fonte-principal);
+    font-weight: 600;
+    padding: 5px;
+}
+
+
+.artigo_paragrafo{
+    font-family: var(--fonte-principal);
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 0 10px 10px;
+    color: var(--cor-fonte-principal)
+}
+
+.rodape{
+    font-family: var(--fonte-principal);
+    display: flex;
+    background-color: var(--cor-fundo-secundaria);
+    color: var(--cor-fundo-terciaria);
+    justify-content: center;
+}
+
+.botao:hover{
+    background-color: var(--cor-de-fundo-hover);
+    color: var(--cor-fonte-terciaria);
+}
+
+.artigo:hover{
+    transform: scale(1.1) translate(40px);   
+}
+
+@media (max-width: 768px){    
+    .conteudo{
+        flex-direction: column;
+    }
+
+    .menu_lateral{
+        flex: none;
+        width: 100%;
+    }
+
+    .artigo{
+        flex-direction: column;
+    } 
+
+    .artigo_imagem{
+        width: 200px;
+        height: 200px;
+        align-self: center;
+        margin-top: 5px;
+        object-fit: cover;
+    }
+
+    .artigo_titulo{
+        font-size: 27px;
+    }
+
+    .artigo_paragrafo{
+        font-size: 22px;
+    }
+
+    .artigo:hover{        
+        transform:scale(1.02) translateY(-5px);
+        
+    } 
+
+    .noticias{
+        margin: 10px;
+    }
+}

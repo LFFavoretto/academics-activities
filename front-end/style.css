@@ -13,6 +13,12 @@
 
 body {
     background-color: var(--cor-fundo-primaria);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 .cabecalho {
     display: flex;

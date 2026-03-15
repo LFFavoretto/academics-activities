@@ -181,10 +181,11 @@ body {
 }
 
 @media (max-width: 768px){  
-    .cabecalho{
-        width: 100%;
-    }  
-    
+    .cabecalho_logo{
+        width: 40px;
+        height: 40px;
+    }
+
     .conteudo{
         flex-direction: column;
     }
@@ -207,11 +208,11 @@ body {
     }
 
     .artigo_titulo{
-        font-size: 27px;
+        font-size: 20px;
     }
 
     .artigo_paragrafo{
-        font-size: 22px;
+        font-size: 16px;
     }
 
     .artigo:hover{        

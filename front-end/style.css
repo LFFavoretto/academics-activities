@@ -180,7 +180,11 @@ body {
     transform: scale(1.1) translate(40px);   
 }
 
-@media (max-width: 768px){    
+@media (max-width: 768px){  
+    .cabecalho{
+        width: 100%;
+    }  
+    
     .conteudo{
         flex-direction: column;
     }

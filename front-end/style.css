@@ -22,7 +22,7 @@ body {
     background-color: var(--cor-fundo-secundaria);
 }
 
-.cabecalho_texto{
+.cabecalho_menu{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -32,21 +32,21 @@ body {
     width: 120px;
 }
 
-.subtitulo {
+.cabecalho_menu_subtitulo {
     font-family: var(--fonte-principal);
     font-size: 18px;
     font-weight: 600;
     color: var(--cor-fundo-terciaria);
 }
 
-.navegacao {
+.cabecalho_menu_navegacao {
     font-family: var(--fonte-principal);
     font-size: 20px;
     display: flex;
     gap: 12px;           
 }
 
-.botao {
+.navegacao_botao {
     border: 2px solid var(--cor-border);
     border-radius: 5px;
     margin-right: 10px;
@@ -184,6 +184,14 @@ body {
     .cabecalho_logo{
         width: 70px;
         height: 70px;
+    }
+
+    .cabecalho_menu_subtitulo{
+        font-size: 14px;
+    }
+
+    .cabecalho_menu_navegacao{
+        font-size: 15px;
     }
 
     .conteudo{

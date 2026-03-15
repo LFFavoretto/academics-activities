@@ -15,6 +15,7 @@ body {
     background-color: var(--cor-fundo-primaria);
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 main {

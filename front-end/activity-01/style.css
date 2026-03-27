@@ -179,7 +179,7 @@ main {
     justify-content: center;
 }
 
-.botao:hover{
+.navegacao_botao:hover{
     background-color: var(--cor-de-fundo-hover);
     color: var(--cor-fonte-terciaria);
 }

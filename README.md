@@ -6,10 +6,11 @@ The main focus is on building a strong foundation in programming logic, data str
 Most of the code is written in Portuguese, including variable names and console messages. Comments may be provided in both Portuguese and English.
 
 ## Covered Topics
-- Lists
+-  Lists
 - Dictionaries
-- Sorting
-- Algorithms (Fibonacci, ranking systems, etc.)
+- Sorting algorithms
+- Problem-solving and logic
+- Classic algorithms (e.g., Fibonacci, ranking systems)
 
 ## Purpose
 The goal of this repository is to practice programming logic and data manipulation using Python and C#.
